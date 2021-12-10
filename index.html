@@ -8,38 +8,62 @@
     <link rel="stylesheet" href="./lib/style.css" />
   </head>
   <body>
-    <h1>Cash Register Manager</h1>
-    <p>
-      Enter Bill Amount + Cash given by Customer to know currency-denominations
-      to return
-    </p>
-    <h2>Bill Amount</h2>
-    <textarea name="" id="inpBillAmount" cols="30" rows="10"></textarea>
-    <h2>Cash Given by Customer</h2>
-    <textarea name="" id="cashGivenByCustomer" cols="30" rows="10"></textarea>
-    <button id="submitBtn">Verify</button>
-    <table id="currencyTable">
-      <tr>
-        <td>No. Of Notes</td>
-        <td class="notes">0</td>
-        <td class="notes">0</td>
-        <td class="notes">0</td>
-        <td class="notes">0</td>
-        <td class="notes">0</td>
-        <td class="notes">0</td>
-        <td class="notes">0</td>
-      </tr>
-      <tr>
-        <td>Notes</td>
-        <td>2000</td>
-        <td>500</td>
-        <td>100</td>
-        <td>20</td>
-        <td>10</td>
-        <td>5</td>
-        <td>1</td>
-      </tr>
-    </table>
+    <div class="container container-centre">
+      <h1 class="heading">Cash Register Manager</h1>
+      <hr />
+      <p class="info">
+        Enter Bill Amount + Cash given by Customer & know the
+        currency-denominations to return.
+      </p>
+      <hr />
+      <h2 class="heading">Bill Amount</h2>
+      <textarea
+        placeholder="Enter amount"
+        class="input block container container-centre"
+        id="inpBillAmount"
+      ></textarea>
+      <h2 class="heading">Cash Given by Customer</h2>
+      <textarea
+        placeholder="Enter amount"
+        class="input block container container-centre"
+        id="cashGivenByCustomer"
+      ></textarea>
+      <button class="btnSubmit block container container-centre" id="submitBtn">
+        Verify
+      </button>
+      <hr />
+      <table id="currencyTable" class="container-centre">
+        <tr>
+          <td>No. Of Notes</td>
+          <td class="notes">0</td>
+          <td class="notes">0</td>
+          <td class="notes">0</td>
+          <td class="notes">0</td>
+          <td class="notes">0</td>
+          <td class="notes">0</td>
+          <td class="notes">0</td>
+        </tr>
+        <tr>
+          <td>Notes</td>
+          <td>2000</td>
+          <td>500</td>
+          <td>100</td>
+          <td>20</td>
+          <td>10</td>
+          <td>5</td>
+          <td>1</td>
+        </tr>
+      </table>
+      <hr />
+      <footer class="footerStyle">
+        <ul class="container container-centre">
+          <li>
+            <div>&copy; | 2021 | aggressify</div>
+          </li>
+          <li></li>
+        </ul>
+      </footer>
+    </div>
     <script src="./lib/app.js"></script>
   </body>
 </html>
